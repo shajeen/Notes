@@ -1,4 +1,4 @@
-# summary
+# Code Samples That Compile Even More Easily - Clare Macrae - CppCon 2020
 
 video link - [watch_now](https://www.youtube.com/watch?v=aw2mQKXhgvU&list=PLHTh1InhhwT7bZ9bfG3pIR6VVjXLrrUoP&index=1)
 
