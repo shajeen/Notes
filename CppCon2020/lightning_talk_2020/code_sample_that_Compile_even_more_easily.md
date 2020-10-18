@@ -1,5 +1,7 @@
 # summary
 
+video link - [watch_now](https://www.youtube.com/watch?v=aw2mQKXhgvU&list=PLHTh1InhhwT7bZ9bfG3pIR6VVjXLrrUoP&index=1)
+
 #### old
 .source.md -> source_file + whole_file => .md file
 
