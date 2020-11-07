@@ -1,2 +1,2 @@
 # Notes
-notes take for referance.
+notes taken for referance.
