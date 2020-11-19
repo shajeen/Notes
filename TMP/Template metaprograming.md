@@ -131,3 +131,34 @@ template<class U>
 struct remove_volatile<U volatile> : type_is<U> {};
 ```
 
+**Compile-time decision-making**
+ - imagine a metafuncitn, IF/IF_t, to select one of two types,
+
+     ```
+     template<bool p, class T, class F?
+     struct IF : type_is<-> {}; // p ? T : F
+     ```
+
+ - such a facility would let us write self-configuring code
+
+     ```
+     int const q = -;
+     IF_t<(q<0), int, unsigned> k; // k declared to have 1 of these 2 int types
+     IF_t<(q<0),F,G>{}(...) // instantiate and call 1 of these 2 function objects
+     class D : public IF_t<(q<0), B1, B2> {...}; // inherit from 1 of these 2 base classes
+     ```
+
+*Behind the scenes of IF*
+ 
+ - Straightforward to implement
+ 
+ ```
+ // primary template
+ template<bool, class T, class> struct IF : type_is<T> {};
+
+ // partial template function
+ template<class T, class F>
+ struct IF<false, T, F> : type_is<F>{};
+ ```
+
+
