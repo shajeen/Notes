@@ -1,7 +1,6 @@
 ---
 title: Template metaprograming
-created: '2020-11-19T16:54:40.647Z'
-modified: '2020-11-19T18:05:10.110Z'
+watched: '44:24/59:51'
 ---
 
 # Template metaprograming
