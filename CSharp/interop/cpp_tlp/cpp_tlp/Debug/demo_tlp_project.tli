@@ -1,0 +1,47 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.16.27045.0 (7610677e).
+//
+// c:\users\ints-39\source\repos\cpp_tlp\cpp_tlp\debug\demo_tlp_project.tli
+//
+// Wrapper implementations for Win32 type library demo_tlp_project.tlb
+// compiler-generated file created 01/19/21 at 17:23:54 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface _TheClass wrapper method implementations
+//
+
+inline _bstr_t _TheClass::GetToString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ToString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline VARIANT_BOOL _TheClass::Equals ( const _variant_t & obj ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Equals(obj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long _TheClass::GetHashCode ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetHashCode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _TypePtr _TheClass::GetType ( ) {
+    struct _Type * _result = 0;
+    HRESULT _hr = raw_GetType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _TypePtr(_result, false);
+}
+
+inline _bstr_t _TheClass::GetTheThing ( _bstr_t arg ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetTheThing(arg, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}

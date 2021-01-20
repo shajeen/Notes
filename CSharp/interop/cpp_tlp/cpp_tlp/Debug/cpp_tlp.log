@@ -1,0 +1,19 @@
+﻿  cpp_tlp.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+c:\users\ints-39\source\repos\cpp_tlp\cpp_tlp\cpp_tlp.cpp(5): warning C4185: ignoring unknown #import attribute 'raw_interface_only'
+c:\users\ints-39\source\repos\cpp_tlp\cpp_tlp\debug\demo_tlp_project.tlh(64): error C3646: 'GetType': unknown override specifier
+c:\users\ints-39\source\repos\cpp_tlp\cpp_tlp\debug\demo_tlp_project.tlh(64): error C2059: syntax error: '('
+c:\users\ints-39\source\repos\cpp_tlp\cpp_tlp\debug\demo_tlp_project.tlh(64): error C2238: unexpected token(s) preceding ';'
+c:\users\ints-39\source\repos\cpp_tlp\cpp_tlp\debug\demo_tlp_project.tli(35): error C2039: 'GetType': is not a member of 'demo_tlp_project::_TheClass'
+  c:\users\ints-39\source\repos\cpp_tlp\cpp_tlp\debug\demo_tlp_project.tlh(47): note: see declaration of 'demo_tlp_project::_TheClass'
+c:\users\ints-39\source\repos\cpp_tlp\cpp_tlp\debug\demo_tlp_project.tli(35): error C7525: inline variables require at least '/std:c++17'
+c:\users\ints-39\source\repos\cpp_tlp\cpp_tlp\debug\demo_tlp_project.tli(35): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\ints-39\source\repos\cpp_tlp\cpp_tlp\debug\demo_tlp_project.tli(35): error C2146: syntax error: missing ';' before identifier 'GetType'
+c:\users\ints-39\source\repos\cpp_tlp\cpp_tlp\debug\demo_tlp_project.tli(37): error C3861: 'raw_GetType': identifier not found
+c:\users\ints-39\source\repos\cpp_tlp\cpp_tlp\debug\demo_tlp_project.tli(38): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+c:\users\ints-39\source\repos\cpp_tlp\cpp_tlp\debug\demo_tlp_project.tli(38): error C2660: '_com_issue_errorex': function does not take 1 arguments
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\comdef.h(229): note: see declaration of '_com_issue_errorex'
+c:\users\ints-39\source\repos\cpp_tlp\cpp_tlp\debug\demo_tlp_project.tli(39): error C2064: term does not evaluate to a function taking 2 arguments
+c:\users\ints-39\source\repos\cpp_tlp\cpp_tlp\debug\demo_tlp_project.tli(39): warning C4508: 'demo_tlp_project::GetType': function should return a value; 'void' return type assumed
+c:\users\ints-39\source\repos\cpp_tlp\cpp_tlp\debug\demo_tlp_project.tli(40): error C2617: 'demo_tlp_project::GetType': inconsistent return statement
+  c:\users\ints-39\source\repos\cpp_tlp\cpp_tlp\debug\demo_tlp_project.tli(35): note: see declaration of 'demo_tlp_project::GetType'

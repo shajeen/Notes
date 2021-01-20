@@ -1,0 +1,94 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.16.27045.0 (7610677e).
+//
+// c:\users\ints-39\source\repos\cpp_tlp\cpp_tlp\debug\demo_tlp_project.tlh
+//
+// C++ source equivalent of Win32 type library demo_tlp_project.tlb
+// compiler-generated file created 01/19/21 at 17:23:54 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//  #import "C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.tlb"
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace demo_tlp_project {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("2ec81ca4-0715-4bfa-9920-564a4ea140b2"))
+/* LIBID */ __demo_tlp_project;
+struct /* coclass */ TheClass;
+struct __declspec(uuid("1ed1036e-c4ae-31c1-8846-5ac75029cb93"))
+/* dual interface */ _TheClass;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_TheClass, __uuidof(_TheClass));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("485b98af-53d4-4148-b2bd-cc3920bf0adf"))
+TheClass;
+    // [ default ] interface _TheClass
+    // interface _Object
+
+struct __declspec(uuid("1ed1036e-c4ae-31c1-8846-5ac75029cb93"))
+_TheClass : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetToString))
+    _bstr_t ToString;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetToString ( );
+    VARIANT_BOOL Equals (
+        const _variant_t & obj );
+    long GetHashCode ( );
+    _TypePtr GetType ( );
+    _bstr_t GetTheThing (
+        _bstr_t arg );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ToString (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_Equals (
+        /*[in]*/ VARIANT obj,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_GetHashCode (
+        /*[out,retval]*/ long * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_GetType (
+        /*[out,retval]*/ struct _Type * * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_GetTheThing (
+        /*[in]*/ BSTR arg,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\users\ints-39\source\repos\cpp_tlp\cpp_tlp\debug\demo_tlp_project.tli"
+
+} // namespace demo_tlp_project
+
+#pragma pack(pop)
